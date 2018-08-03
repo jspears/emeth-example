@@ -1,0 +1,33 @@
+{
+  "name": "emeth-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mrbuilder"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mrbuilder": "^3.1.1",
+    "mrbuilder-plugin-eslint": "^3.1.0",
+    "mrbuilder-plugin-react": "^3.1.0",
+    "mrbuilder-preset-app": "^3.1.1",
+    "mrbuilder-preset-dev": "^3.1.1",
+    "mrbuilder-plugin-emeth": "^3.1.1"
+
+  },
+  "mrbuilder": {
+    "plugins": [
+      "mrbuilder-plugin-emeth",
+
+      [
+        "mrbuilder-plugin-css",
+        {
+          "modules": true,
+          "css":false
+        }
+      ]
+    ]
+  }
+}
